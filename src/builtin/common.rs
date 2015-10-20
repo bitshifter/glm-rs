@@ -30,7 +30,6 @@ use vec::vec::{ Vector2, Vector3, Vector4 };
 use cast::PrimCast;
 use std::mem;
 use std::ops::Rem;
-use num::{ Float, One, Zero };
 
 pub trait FloatIntRel<E: BaseFloat, I: BaseInt, GI: GenInt<I>>: GenFloat<E> {
     // float -> int

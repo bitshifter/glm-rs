@@ -31,7 +31,6 @@ use std::ops::{
     Index, IndexMut,
 };
 use rand::{ Rand, Rng };
-use num::{ Float, One, Zero };
 use quickcheck::{ Arbitrary, Gen };
 
 // copied from `cgmath-rs/src/vector.rs`.

@@ -25,7 +25,9 @@ use std::cmp;
 use std::{ f32, f64 };
 use std::ops::{ Sub, Div, Rem, Neg };
 use rand::Rand;
-use num::{ PrimInt, Float, One, Signed, Zero };
+
+// reexport the num traits used by glm
+pub use num::{ PrimInt, Float, One, Signed, Zero };
 
 /// Marker trait for primitive types.
 ///
