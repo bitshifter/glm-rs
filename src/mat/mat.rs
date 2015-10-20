@@ -254,6 +254,16 @@ macro_rules! impl_matrix {
                     ary
                 }
                 #[inline(always)]
+                pub fn as_ptr(&self) -> *const T {
+                    let ptr: *const T = unsafe { mem::transmute(self) };
+                    ptr
+                }
+                #[inline(always)]
+                pub fn as_ptr_mut(&mut self) -> *mut T {
+                    let ptr: *mut T = unsafe { mem::transmute(self) };
+                    ptr
+                }
+                #[inline(always)]
                 pub fn add_s(&self, rhs: T) -> $t<T> {
                     $t::new($(self.$field + rhs), +)
                 }
