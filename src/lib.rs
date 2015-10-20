@@ -130,6 +130,7 @@ extern crate quickcheck;
 pub use builtin::*;
 
 pub use basenum::{
+    PrimInt, Float, One, Signed, Zero,
     Primitive, BaseNum, BaseInt, BaseFloat, SignedNum,
     ApproxEq, is_approx_eq, is_close_to
 };
